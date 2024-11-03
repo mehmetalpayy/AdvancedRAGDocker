@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    container_name: advancedRag_v1
+    command: python main.py
+    environment:
+      - PYTHON_ENV=production
+    labels:
+      - "version=1.0"
+      - "environment=production"
